@@ -1,0 +1,22 @@
+<div class="jumbo">
+  
+  <h2>Welcome!</h2>
+  <p>We hope you find exactly what you're looking for in a place to stay.</p> <br/>
+
+<div>
+<input type="text" id="whiskeysearch">
+</div>
+
+	{{#each model as |whisks|}}
+	<article class="listing">
+    <h3>{{whisks.names}}</h3>
+    <div class="detail">
+      <span>Producer:</span> {{whisks.producer}}
+    </div>
+    <div class="detail type">
+      <span>Age:</span> {{whisks.age}}
+    </div>
+    <div class="right"><img src={{whisks.image}} height="100" width="100"></div>
+  </article>
+	{{/each}}
+</div>

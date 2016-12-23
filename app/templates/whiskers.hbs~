@@ -1,0 +1,38 @@
+<div class="jumbo">
+
+  <h2>Welcome!</h2>
+  <p>We hope you find exactly what you're looking for in a place to stay.</p> <br/>
+
+
+  <!--
+    <p>{{input type="text" value=view.filter}}</p>
+   
+    {{#each view.filteredList}}
+    <article class="listing">
+    <h4>{{whisks.names}}</h4>
+    <div class="detail">
+      <span>Hair type:</span> {{whisks.producer}}
+    </div>
+    <div class="detail type">
+      <span>Age:</span> {{whisks.age}}
+    </div>
+    <div class="right"><img src="{{whisks.image}}" height="100" width="100"></div>
+  </article>
+    
+    
+    {{/each}}
+
+-->
+{{#each model as |whisks|}}
+	<article class="listing">
+    <h4>{{whisks.names}}</h4>
+    <div class="detail">
+      <span>Hair type:</span> {{whisks.producer}}
+    </div>
+    <div class="detail type">
+      <span>Age:</span> {{whisks.age}}
+    </div>
+    <div class="right"><img src="{{whisks.image}}" height="100" width="100"></div>
+  </article>
+{{/each}}
+</div> 

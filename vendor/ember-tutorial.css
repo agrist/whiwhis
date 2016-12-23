@@ -1,10 +1,11 @@
-
-
 @import url(https://fonts.googleapis.com/css?family=Lato:300,300italic,400,700,700italic);
 
+/**
+ * Base Elements
+ */
 
 * {
-    margin: 5;
+    margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
@@ -25,9 +26,13 @@ a {
 }
 
 body {
-    background: grey;
+    background: #f3f3f3;
 }
 
+a {
+    color: #2185D0;
+    text-decoration: none;
+}
 
 p {
     line-height: 1.5;
@@ -42,10 +47,10 @@ p {
     text-decoration: none;
     color: #fff;
     background: #2185D0;
-    border-radius: 10px;
+    border-radius: 5px;
     border: none;
     font-size: 16px;
-    opacity: 0.8;
+    opacity: 0.9;
 }
 
 .button:hover {
@@ -56,11 +61,10 @@ p {
  * Body Container
  */
 .container {
-    max-width: 80%;
+    max-width: 1024px;
     min-height: 100vh;
-    align-content: center;
-    background: lightgray;
-    margin: 5 auto;
+    background: #f9f9f9;
+    margin: 0 auto;
 }
 
 /**
@@ -68,8 +72,9 @@ p {
  */
 .menu {
     height: 4em;
-   background-color: #05526A;
-  
+    background-color: #677ae4;
+    background-color: #05526A;
+    background-color: #e46855;
 }
 
 .menu h1 {
@@ -87,8 +92,8 @@ p {
     text-decoration: none;
     line-height: 1;
     padding: 15px;
-    color: black;
-    opacity: 0.35;
+    color: #f9f9f9;
+    opacity: 0.85;
 }
 
 .menu a:hover,
@@ -156,13 +161,15 @@ p {
  * Content Area
  */
 .body {
-    padding: 35px;
+    padding: 15px;
 }
 
+/**
+ * Similar to Jumbotron
+ */
 .jumbo {
     padding: 50px;
     background: #f6f6f6;
-    height: 80%;
 }
 
 .jumbo:hover {
@@ -176,6 +183,13 @@ p {
 
 .jumbo p {
     margin-bottom: 25px;
+}
+
+.jumbo img {
+    height: 200px;
+    position: relative;
+    top: -25px;
+    right: -20px;
 }
 
 /**
@@ -198,6 +212,18 @@ p {
     float: left;
     margin-right: 45px;
     border-radius: 5px;
+}
+
+.listing a.image.wide {
+    max-width: 100%;
+    position: relative;
+    z-index: 999;
+}
+
+.listing .wide img {
+    height: initial;
+    width: 100%;
+    margin-bottom: 30px;
 }
 
 .listing .wide small {
@@ -244,19 +270,35 @@ p {
     font-style: italic;
 }
 
+.listing .detail span {
+    font-weight: 400;
+    font-style: normal;
+}
+
+.show-listing .title {
+    margin-bottom: 15px;
+}
 
 .show-listing .detail-section {
     width: 50%;
     padding-left: 30px;
 }
 
+.show-listing .owner {
+    margin-top: 10px;
+}
 
+.show-listing .rental-pic {
+    width: 50%;
+    height: initial;
+    position: static;
+}
 
 /**
  * Utilities
  */
 .light {
-    font-weight: 250;
+    font-weight: 300;
 }
 
 .left {
@@ -265,3 +307,20 @@ p {
 
 .right {
     float: right;
+}
+
+.hidden {
+    display: none;
+}
+
+.relative {
+    position: relative;
+}
+
+.tomster {
+    background: url(http://emberjs.com/images/tomsters/teaching.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+    height: 200px;
+    width: 200px;
+}
