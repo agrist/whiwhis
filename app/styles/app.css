@@ -265,3 +265,9 @@ p {
 
 .right {
     float: right;
+
+	
+.whiskerColor {
+	color: purple;
+	background-color: #f3f3f3;
+}

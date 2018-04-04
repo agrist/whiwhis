@@ -1,0 +1,31 @@
+{{outlet}}
+  <div>
+    Read all:
+    <ul>
+      {{#each model as |dwarf|}}
+        <li>{{dwarf.name}},  {{dwarf.profession}}</li>
+      {{/each}}
+    </ul>
+  </div>
+
+  <div>
+  	{{input value=findID placeholder="ID"}}
+    <button {{action 'readUser'}}>Read 1 user</button>
+  </div>
+
+  <div>
+    {{input value=newUser placeholder="username"}}
+	{{input value=newProfession placeholder="profession"}}
+	{{input value=newPass placeholder="password"}}
+	{{input value=newID placeholder="newID"}}
+    <button {{action 'createUser'}}>Create</button>
+  </div>
+  <div>
+    {{input value=updatedTitle placeholder="new name for board game 1"}}
+    <button {{action 'updateBoardGame'}}>Update</button>
+  </div>
+
+  <div>
+    {{input value=destroyId placeholder="id of game to delete"}}
+    <button {{action 'destroyBoardGame'}}>Delete</button>
+</div>

@@ -42,5 +42,8 @@
     "ember-welcome-page": "^1.0.1",
     "liquid-fire": "0.26.1",
     "loader.js": "^4.0.1"
+  },
+  "dependencies": {
+    "npm": "^5.7.1"
   }
 }

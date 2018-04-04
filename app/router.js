@@ -11,6 +11,7 @@ Router.map(function() {
   this.route('whiskers');
   this.route('whiskeys');
   this.route('contact');
+  this.route('user');
 });
 
 export default Router;
